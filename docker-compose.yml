@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+
+  dev:
+    container_name: ${PROJECT_NAME:-fake-proj-name}-dev-cont
+    image: ${PROJECT_NAME:-fake-proj-name}-dev-img
+
+    networks:
+      - see-network-name-below
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3000:3000
+      - 3010:3010
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+networks:
+  see-network-name-below:
+    name: ${PROJECT_NAME:-fake-proj-name}-net
+

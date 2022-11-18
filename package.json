@@ -1,0 +1,55 @@
+{
+  "name": "dyrv",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": false,
+  "description": "Docker - Yarn - React - Vite",
+  "keywords": [],
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migmac99/dyrv"
+  },
+  "dependencies": {
+    "@devbookhq/splitter": "^1.3.2",
+    "@vitejs/plugin-react": "^1.3.1",
+    "bootstrap": "5.1.3",
+    "eslint": "^8.14.0",
+    "react": "17.0.2",
+    "react-bootstrap": "2.1.2",
+    "react-dom": "17.0.2",
+    "react-helmet": "^6.1.0",
+    "vite": "^2.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "sass": "^1.49.7",
+    "shx": "^0.3.4",
+    "typescript": "4.1.3"
+  },
+  "scripts": {
+    "start": "vite --host 0.0.0.0 --port 3000",
+    "start2": "chmod +x ./shells/start.sh && ./shells/start.sh",
+    "build": "chmod +x ./shells/build.sh && ./shells/build.sh",
+    "serve": "vite preview",
+    "d:dev-run": "chmod +x ./d-go.sh && ./d-go.sh dev-run Dyrv-web",
+    "d:dev-up": "chmod +x ./d-go.sh && ./d-go.sh dev-up Dyrv-web",
+    "d:prod-run": "chmod +x ./d-go.sh && ./d-go.sh prod-run Dyrv-web",
+    "d:prod-up": "chmod +x ./d-go.sh && ./d-go.sh prod-up Dyrv-web",
+    "d:down": "chmod +x ./d-go.sh && ./d-go.sh down Dyrv-web",
+    "d:build": "chmod +x ./d-go.sh && ./d-go.sh build Dyrv-web",
+    "d:build-tar": "chmod +x ./d-go.sh && ./d-go.sh build-tar Dyrv-web",
+    "d:save-tar": "chmod +x ./d-go.sh && ./d-go.sh save-tar Dyrv-web",
+    "d:load-tar": "chmod +x ./d-go.sh && ./d-go.sh load-tar Dyrv-web",
+    "d:clean": "chmod +x ./d-go.sh && ./d-go.sh clean Dyrv-web",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
