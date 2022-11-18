@@ -12,6 +12,7 @@ echo    '  Will do a vite build to create ./build/ with:'
 echo -e "    1.  calculate a token suffix NNNN"
 echo -e "    2.  copy index_react.html to index_react_NNNN.html"
 echo -e "    3.  run a local server: http://localhost:3000/'"
+source .env
 echo -e "$BGgreen$white>$nc \$MAGIC_LOCKUP=$MAGIC_LOCKUP"
 echo -e "$BGgreen$white>$nc tok_suffix=node -e ""    function hashCode(str){ return (str.split('').reduce((agg, x)=>{  agg = (agg << 5) - agg + x.charCodeAt(0);  return Math.abs(agg & agg) }, 0) )}; console.log(hashCode('\$MAGIC_LOCKUP' + '9Z8d*s42fDhi'))"""
 echo -e "$BGgreen$white>$nc cp index_react.html to index_react_$tok_suffix.html"
